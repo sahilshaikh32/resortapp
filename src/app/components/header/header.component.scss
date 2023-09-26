@@ -1,0 +1,48 @@
+@media(min-width: 768px) {
+    .mobile-header {
+        display: none;
+        
+
+    }
+    .header {
+        display: flex;
+        background: #3dc2ff;
+        padding-left: 40px;
+        padding-right: 40px;
+        color: #fff;
+    }
+    }
+    @media(max-width: 768px) {
+    .mobile-header {
+        display: block;
+        .toolbar-background{
+            --background: #3dc2ff;
+          }
+    }
+    .header {
+        display: none;
+    }
+}
+.active-item {
+    border-bottom: 2px solid #fff;
+}
+ion-searchbar.searchbar {
+    --background: #fff;
+    --color:#3dc2ff;
+    --placeholder-color: #3dc2ff;
+    --icon-color: #3dc2ff;
+    --clear-button-color: #3dc2ff;
+     --border-radius: 7px;
+     
+}
+.main-header{
+    border-bottom: 2px solid white;
+    z-index: 9999999999;
+    position: relative;
+}
+
+.signupbtn{
+    border: 1px solid #fff;
+    border-radius: 100px;
+    letter-spacing:2px;
+}

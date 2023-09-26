@@ -1,0 +1,16 @@
+ <ion-row>
+    <ion-col size-lg="4" size-md="4" size-sm="4" size-xs="12" style="margin-bottom:20px;" *ngFor="let x of card_list">
+      <ion-card class="card">
+        <ion-img [src]="x.imageUrl" class="cardimg"></ion-img>
+        <ion-card-header>
+          <ion-card-title>{{ x.name }}</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          Here's a small text description for the card content. Nothing more, nothing less.
+        </ion-card-content>
+        <!-- <ion-button  routerLink="/bookingform">Book</ion-button> -->
+        <ion-button color="secondary" (click)="openPopupForm()">Book</ion-button>
+      </ion-card>
+    </ion-col>
+</ion-row> 
+

@@ -1,0 +1,14 @@
+ion-card{
+    background: transparent;
+    box-shadow: none;
+    font-family: "Raleway", sans-serif;
+}
+.cardimg {
+    transition: .5s ease all; 
+    width: 100%; 
+    object-fit:cover;
+    overflow: hidden;
+}
+.cardimg:hover {
+  transform: scale(1.1);
+}

@@ -1,0 +1,8 @@
+<ion-input [disabled]='disabled' [label]="label" labelPlacement="floating" [minlength]="minLength" [maxlength]="maxLength"
+  (keyup.enter)="keyEnter()" [type]="type" [placeholder]="label" 
+  (ionChange)="editInput()" (ionBlur)="checkFocus()" 
+  (paste)="onPaste($event)" [(ngModel)]="variable" 
+  [clearInput]="clearInput"
+  (ionInput)='onTypeIn()' fill='outline'>
+</ion-input>
+<div class='validationError' *ngIf="validationMessage">{{validationMessage}}</div>

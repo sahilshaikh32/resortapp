@@ -1,0 +1,85 @@
+<ion-content>
+  <section>
+  <swiper-container [loop]="true" [pagination]="true" [autoplay]="{ delay: 1000 }" (slidechange)="swiperSlideChanged($event)" class="banner">
+      <swiper-slide><img src="../../../assets/image/banner3.jpg" class="banner-img"></swiper-slide>
+      <swiper-slide><img src="../../../assets/image/banner2.jpg" class="banner-img"></swiper-slide>
+      <swiper-slide><img src="../../../assets/image/banner.webp" class="banner-img"></swiper-slide>
+    </swiper-container>
+  </section>
+ 
+  <section>
+    <div class="heading">
+      <h2>Explore <span>Locations</span></h2>
+    </div>
+    <ion-row>
+      <ion-col size-lg="4" size-md="4" size-sm="4" size-xs="12" class="col-pad">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front" style="background: url('../../../assets/image/california.webp');background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            object-fit: cover;">
+                <p>EXPLORE</p>
+                <p class="title">CALIFORNIA</p>
+            </div>
+            <div class="flip-card-back" style="background: url('../../../assets/image/Caribbean.webp'); background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            object-fit: cover;">
+                <p>EXPLORE</p>
+                <p class="title">BAHAMAS</p>
+            </div>
+          </div>
+        </div>
+      </ion-col>
+      <ion-col size-lg="4" size-md="4" size-sm="4" size-xs="12" class="col-pad">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front" style="background: url('../../../assets/image/Mexico.webp');background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            object-fit: cover;">
+                 <p>EXPLORE</p>
+                <p class="title">MEXICO</p>
+               
+            </div>
+            <div class="flip-card-back" style="background: url('../../../assets/image/hawaii.webp');background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            object-fit: cover;">
+                <p>EXPLORE</p>
+                <p class="title">HAWAII</p>
+            </div>
+          </div>
+        </div>
+      </ion-col>
+      <ion-col size-lg="4" size-md="4" size-sm="4" size-xs="12" class="col-pad">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front" style="background: url('../../../assets/image/florida.webp');background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            object-fit: cover;">
+                <p>EXPLORE</p>
+                <p class="title">FLORIDA</p>
+             </div>
+            <div class="flip-card-back" style="background: url('../../../assets/image/arizona.webp');background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            object-fit: cover;">
+                <p>EXPLORE</p>
+                <p class="title">ARIZONA</p>
+            </div>
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+  </section>
+  <section>
+    <div class="heading">
+      <h2>Take a <span>Resort</span></h2>
+    </div>
+  <app-card [card_list]="cards"></app-card>
+  </section>
+  
+</ion-content>

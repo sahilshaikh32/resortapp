@@ -1,0 +1,11 @@
+<ion-content>
+    <div class="form">
+        <h2>Booking</h2>
+        <ion-input label="Name* "  name="name"  label-placement="floating" fill="outline" color="secondary" placeholder="Name" >  
+        </ion-input><br>
+        <ion-input label="Email* "  name="email" label-placement="floating" fill="outline" color="secondary" placeholder="Email"  >  
+        </ion-input><br>
+        <ion-datetime [value]="['2023-09-03', '2023-09-13', '2023-09-29']" name="dateTime"></ion-datetime>
+        <ion-button (click)="saveUserData()">Save</ion-button>
+    </div>
+</ion-content>

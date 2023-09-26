@@ -1,0 +1,29 @@
+.active-item {
+    color: var(--ion-color-secondary);
+    font-weight: 500;
+    ion-icon{
+        color: var(--ion-color-secondary);
+    }
+}
+
+ion-menu::part(backdrop) {
+    background-color: rgba(194, 194, 194, 0.5);
+  }
+  
+  ion-menu::part(container) {
+    border-radius: 0 20px 20px 0;
+  
+    box-shadow: 4px 0px 16px rgb(118 118 118 / 40%);
+  }
+
+  @media (min-width: 768px) {
+    ion-router-outlet{
+      margin-top: 63px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    ion-router-outlet{
+      margin-top: 56px;
+    }
+  }
